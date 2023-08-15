@@ -1,0 +1,100 @@
+body {
+    background-color: #19191c;
+    color: floralwhite;
+}
+
+div.document {
+    background-color: #19191c;
+}
+
+div.vp-sidebar {
+    background-color: #1f1f21;
+}
+
+.navbar {
+    background-color: #303033;
+
+}
+
+
+.navbar .site-name {
+    color: floralwhite;
+}
+
+.vp-sidebar .toctree-l1 a.current,
+.vp-sidebar .toctree-l2 a.current {
+    color: floralwhite;
+}
+
+.vp-sidebar a {
+    color: floralwhite;
+}
+
+a {
+    color: #a0a0a2;
+}
+
+
+p {
+    color: #a0a0a2;
+}
+
+.caption {
+    color: floralwhite;
+}
+
+
+
+.vp-sidebar .toctree-l1 a,
+.vp-sidebar .toctree-l2 a {
+    color: #9f9fa0;
+}
+
+.vp-sidebar .toctree-l1.current a {
+    border-left: .5rem solid #1f1f21;
+}
+
+.content .highlight pre {
+    background-color: #252528
+}
+
+.highlight .kd {
+    color: #b76d30;
+}
+
+.highlight .nx {
+    color: #9aa6b4;
+}
+
+.highlight .k {
+    color: #b76d30;
+}
+
+.highlight .o {
+    color: #9aa6b4;
+}
+
+p a code {
+    font-weight: 400;
+    color: #fff
+}
+
+.nav-links a.router-link-active,
+.nav-links a:hover {
+    color: #fff
+}
+
+.vp-sidebar .toctree-l1 a.current,
+.vp-sidebar .toctree-l2 a.current {
+    color: #fff;
+    font-weight: 600
+}
+
+.vp-sidebar .toctree-l1 a:hover,
+.vp-sidebar .toctree-l2 a:hover {
+    color: #ffff
+}
+
+tr:nth-child(2n){
+    background-color:#1f1f21;
+}
