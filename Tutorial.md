@@ -13,7 +13,7 @@ pip install --upgrade pip
 Содержимое requirements.txt:
 sphinx
 myst-parser
-sphinx-press-theme
+sphinx-book-theme
 ```
 pip install -r requirements.txt
 ```
@@ -38,7 +38,7 @@ firefox ..... /docs/build/html/index.html
 ```
 extensions = ['myst_parser','sphinx.ext.todo','sphinx.ext.viewcode','sphinx.ext.autodoc', 'sphinx.ext.napoleon']
 
-html_theme = 'press'
+html_theme = 'sphinx_book_theme'
 ```
 В начало файла вставляем:
 ```
@@ -55,7 +55,10 @@ sys.path.insert(0, os.path.abspath('../../PROJECT-folder-NAME'))
 sphinx-apidoc -f -o source/processed-documentation-files ../PROJECT-folder-NAME
 ```
 В IDE processed-documentation-files отображается не сразу. Зайдите через проводник.
+Перейти в processed-documentation-files
 Добавить в index.rst к modules
+
+
 ```
 .. toctree::
    :maxdepth: 2
@@ -68,17 +71,21 @@ sphinx-apidoc -f -o source/processed-documentation-files ../PROJECT-folder-NAME
 ## Создаем Markdown файл
 В source/ папке сделаем файл с названием mymarkdown.md
 Добавляем mymarkdown.md в index.rst
-
-## Редактируем тему
-Копируем файлы в папку /sourse
-_static -> style.css
-_templates -> все html, что в ней лежат
-
-## Удаляем старый HTML и делаем новый 
-Переходим в папку docs
+Маркдавн фал должен быть не пустым!
 ```
-make clean
-make html
+===========================================
+
+.. toctree::
+   :maxdepth: 2
+   :caption: Contents:
+
+   mymarkdown
+   ./processed-documentation-files/modules
+
+Indices and tables
+==================
+```
+
 ```
 ## Conventional Commits
 + build Сборка проекта или изменения внешних зависимостей
